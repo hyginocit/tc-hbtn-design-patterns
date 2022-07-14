@@ -1,5 +1,8 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("pt", "BR"));
         PersonagemFactory terraMediaPersonagemFactory = new WesterosPersonagemFactory();
         PersonagemFactory westerosPersonagemFactory = new TerraMediaPersonagemFactory();
 
@@ -65,5 +68,6 @@ public class Program {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
+
     }
 }

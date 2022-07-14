@@ -1,4 +1,4 @@
-public class Mago extends Personagem{
+public class Mago extends Personagem {
 
     public Mago(String nome, int inteligencia, int forca, int vigor, int resistencia, int destreza) {
         super(nome, TipoPersonagem.MAGO, inteligencia, forca, vigor, resistencia, destreza);
@@ -10,6 +10,7 @@ public class Mago extends Personagem{
 
     @Override
     public double getDanoAtaque() {
+
         return (getInteligencia() * 0.8) + (getForca() * 0.05) + (getDestreza() * 0.05) + (getVigor() * 0.1);
     }
 }
